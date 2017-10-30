@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TwoDemo</string>
+    <string name="two_home">首页</string>
+    <string name="two_class">分类</string>
+    <string name="two_cart">购物车</string>
+    <string name="two_user">我的</string>
+    <string name="MineID">18810589964</string>
+    <string name="MineShop">商品：</string>
+    <string name="MineDian">店铺：</string>
+    <string name="MineFoot">我的足迹</string>
+    <string name="AllIndent">全部订单</string>
+    <string name="WeiFuKuan">未付款</string>
+    <string name="DaiFuKuan">代付款</string>
+    <string name="DaiShouHuo">待收货</string>
+    <string name="DaiPingJia">待评价</string>
+    <string name="TuiHuo">退货/款</string>
+    <string name="YuCunKuan">预存款</string>
+    <string name="ChongZhi">充值卡</string>
+    <string name="DaiJinJuan">代金卷</string>
+    <string name="HongBao">红包</string>
+    <string name="JiFen">积分</string>
+    <string name="ShouHuoDiZhi">收货地址</string>
+    <string name="XiTongSheZhi">系统设置</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+
+</resources>

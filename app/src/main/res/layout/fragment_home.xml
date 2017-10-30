@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/home_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorOrange">
+
+        <ImageView
+            android:id="@+id/Zxing"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_normal_code"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/sousuo"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:text="搜索一下"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorHui"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/colorinput"
+            android:drawableRight="@mipmap/ic_edit_search"/>
+
+        <ImageView
+            android:id="@+id/xiaoxi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_normal_message"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <!--<com.youth.banner.Banner-->
+        <!--android:id="@+id/mybanner"-->
+        <!--android:layout_below="@id/home_nav"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp">-->
+    <!--</com.youth.banner.Banner>-->
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_below="@id/mybanner"-->
+        <!--android:id="@+id/grid"-->
+        <!--android:divider="#ffff0000"-->
+        <!--android:dividerHeight="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="热门活动"-->
+        <!--android:textSize="23sp"/>-->
+    <!--<cn.iwgang.countdownview.CountdownView-->
+        <!--android:id="@+id/countdownView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:isHideTimeBackground="false"-->
+        <!--app:timeBgColor="#f5f5f5"-->
+        <!--app:isShowDay="true"-->
+        <!--app:isShowHour="true"-->
+        <!--app:isShowMinute="true"-->
+        <!--app:isShowSecond="true"-->
+        <!--app:timeTextColor="#000"-->
+        <!--app:timeTextSize="14sp"-->
+        <!--app:suffixGravity="center"-->
+        <!--app:suffixTextColor="#7B3A94"-->
+        <!--app:suffixTextSize="12sp"-->
+        <!--app:suffixDay="天"-->
+        <!--app:suffixHour="时"-->
+        <!--app:suffixMinute="分"-->
+        <!--app:suffixSecond="秒"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    <!--<com.youth.banner.Banner-->
+        <!--android:id="@+id/mybannertwo"-->
+        <!--android:layout_below="@id/grid"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp">-->
+    <!--</com.youth.banner.Banner>-->
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_below="@id/mybannertwo"-->
+        <!--android:id="@+id/id_recyclerview"-->
+        <!--android:divider="#ffff0000"-->
+        <!--android:dividerHeight="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xre_xrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</LinearLayout>

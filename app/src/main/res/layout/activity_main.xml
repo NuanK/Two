@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.test.twodemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fra_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Linearlayout1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMine">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/two_home"
+                style="@style/two_demo"
+                android:drawableTop="@drawable/select_nav1"
+                android:text="@string/two_home"
+                android:textColor="@color/colorOrange"/>
+
+            <RadioButton
+                android:id="@+id/two_class"
+                style="@style/two_demo"
+                android:drawableTop="@drawable/select_nav2"
+                android:text="@string/two_class" />
+
+            <RadioButton
+                android:id="@+id/two_cart"
+                style="@style/two_demo"
+                android:drawableTop="@drawable/select_nav3"
+                android:text="@string/two_cart" />
+
+            <RadioButton
+                android:id="@+id/two_user"
+                style="@style/two_demo"
+                android:drawableTop="@drawable/select_nav4"
+                android:text="@string/two_user" />
+
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

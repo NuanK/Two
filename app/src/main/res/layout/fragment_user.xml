@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorMineTop">
+
+            <RadioButton
+                android:id="@+id/two_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@mipmap/ic_default_user_head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="@string/MineID"
+                android:textColor="@color/colorTopEditText"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/colorMineTop2">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/shops"
+                    style="@style/AppMine"
+                    android:drawableTop="@mipmap/ic_collection_goods"
+                    android:text="@string/MineShop" />
+
+                <RadioButton
+                    android:id="@+id/stores"
+                    style="@style/AppMine"
+                    android:drawableTop="@mipmap/ic_collection_store"
+                    android:text="@string/MineDian" />
+
+                <RadioButton
+                    android:id="@+id/Myfoot"
+                    style="@style/AppMine"
+                    android:drawableTop="@mipmap/ic_user_footprint"
+                    android:text="@string/MineFoot" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMine">
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorTopEditText">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/ic_user_order" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_normal_dot_left" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/img"
+                        android:layout_toRightOf="@+id/img"
+                        android:text="@string/AllIndent"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/WeiZhifu"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_order_wait_pay"
+                        android:text="@string/WeiFuKuan" />
+
+                    <RadioButton
+                        android:id="@+id/kind"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_order_wait_drive"
+                        android:text="@string/DaiFuKuan" />
+
+                    <RadioButton
+                        android:id="@+id/Shop"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_order_wait_receipt"
+                        android:text="@string/DaiShouHuo" />
+
+                    <RadioButton
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_order_wait_comment"
+                        android:text="@string/DaiPingJia" />
+
+                    <RadioButton
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_order_wait_refund"
+                        android:text="@string/TuiHuo" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/one"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorTopEditText">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/MyCaiChan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/ic_user_property" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_normal_dot_left" />
+
+                    <TextView
+                        android:id="@+id/caichan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/MyCaiChan"
+                        android:layout_toRightOf="@+id/MyCaiChan"
+                        android:text="@string/AllIndent"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/YuCunKuan"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_property_money"
+                        android:text="@string/YuCunKuan" />
+
+                    <RadioButton
+                        android:id="@+id/ChongZhiKa"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_property_card"
+                        android:text="@string/ChongZhi" />
+
+                    <RadioButton
+                        android:id="@+id/DaiJinJuan"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_property_vouchers"
+                        android:text="@string/DaiJinJuan" />
+
+                    <RadioButton
+                        android:id="@+id/HongBao"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_property_red"
+                        android:text="@string/HongBao" />
+
+                    <RadioButton
+                        android:id="@+id/JiFen"
+                        style="@style/MineFuction"
+                        android:drawableTop="@mipmap/ic_user_property_integral"
+                        android:text="@string/JiFen" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/three"
+                android:layout_below="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorTopEditText">
+
+                <ImageView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_user_address"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_normal_dot_left" />
+
+                <TextView
+                    android:id="@+id/ShouHuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/address"
+                    android:layout_toRightOf="@+id/address"
+                    android:text="@string/ShouHuoDiZhi"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorTopEditText">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_user_setting"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_normal_dot_left" />
+
+                <TextView
+                    android:id="@+id/SheZhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/setting"
+                    android:layout_toRightOf="@+id/setting"
+                    android:text="@string/XiTongSheZhi"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
